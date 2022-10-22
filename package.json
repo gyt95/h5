@@ -19,6 +19,7 @@
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
     "@vitejs/plugin-vue": "^3.1.2",
+    "@vue/eslint-config-prettier": "^7.0.0",
     "eslint": "^8.26.0",
     "eslint-plugin-vue": "^9.6.0",
     "husky": "^8.0.0",
@@ -32,12 +33,15 @@
     "vue": "^3.2.41"
   },
   "lint-staged": {
-    "*.js":[
+    "*.js?(x)": [
       "prettier --write"
     ],
-    "*.ts":[
+    "*.ts?(x)": [
       "eslint",
       "prettier --parser=typescript --write"
+    ],
+    "*.{vue,md,json}": [
+      "prettier --write"
     ]
   }
 }
