@@ -1,0 +1,19 @@
+lockfileVersion: 5.4
+
+importers:
+
+  .:
+    specifiers:
+      husky: ^8.0.0
+    devDependencies:
+      husky: registry.npmjs.org/husky/8.0.1
+
+packages:
+
+  registry.npmjs.org/husky/8.0.1:
+    resolution: {integrity: sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/husky/-/husky-8.0.1.tgz}
+    name: husky
+    version: 8.0.1
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
