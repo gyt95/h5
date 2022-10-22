@@ -8,6 +8,9 @@
     "prepare": "husky install",
     "preview": "vite preview"
   },
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "keywords": [],
   "author": "Kwan",
   "devDependencies": {
