@@ -2,15 +2,22 @@
   "name": "h5",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "prepare": "husky install"
+    "dev": "vite",
+    "build": "vite build",
+    "prepare": "husky install",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "Kwan",
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
-    "husky": "^8.0.0"
+    "@vitejs/plugin-vue": "^3.1.2",
+    "husky": "^8.0.0",
+    "vite": "^3.1.8"
+  },
+  "dependencies": {
+    "vue": "^3.2.41"
   }
 }
