@@ -6,6 +6,7 @@ importers:
     specifiers:
       '@commitlint/cli': ^17.1.2
       '@commitlint/config-conventional': ^17.1.0
+      '@originjs/vite-plugin-federation': 1.1.7
       '@typescript-eslint/eslint-plugin': ^5.40.1
       '@typescript-eslint/parser': ^5.40.1
       '@vitejs/plugin-vue': ^3.1.2
@@ -24,6 +25,7 @@ importers:
     devDependencies:
       '@commitlint/cli': registry.npmjs.org/@commitlint/cli/17.1.2
       '@commitlint/config-conventional': registry.npmjs.org/@commitlint/config-conventional/17.1.0
+      '@originjs/vite-plugin-federation': registry.npmjs.org/@originjs/vite-plugin-federation/1.1.7
       '@typescript-eslint/eslint-plugin': registry.npmjs.org/@typescript-eslint/eslint-plugin/5.40.1_c4zyna56jjjrggqkyejnaxjxfu
       '@typescript-eslint/parser': registry.npmjs.org/@typescript-eslint/parser/5.40.1_wyqvi574yv7oiwfeinomdzmc3m
       '@vitejs/plugin-vue': registry.npmjs.org/@vitejs/plugin-vue/3.1.2_vite@3.1.8+vue@3.2.41
@@ -412,6 +414,16 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': registry.npmjs.org/@nodelib/fs.scandir/2.1.5
       fastq: registry.npmjs.org/fastq/1.13.0
+    dev: true
+
+  registry.npmjs.org/@originjs/vite-plugin-federation/1.1.7:
+    resolution: {integrity: sha512-khKwJQcljEdqL7VZgBTGX7zgLHDx2mBpZ8V+ghZEZYJp+YWCoucRmnYQhliwJ82PlEN1fYYf5mOrO3VBvC5HNw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@originjs/vite-plugin-federation/-/vite-plugin-federation-1.1.7.tgz}
+    name: '@originjs/vite-plugin-federation'
+    version: 1.1.7
+    engines: {node: '>=14.0.0', pnpm: '>=7.0.1'}
+    dependencies:
+      estree-walker: registry.npmjs.org/estree-walker/1.0.1
+      magic-string: registry.npmjs.org/magic-string/0.25.9
     dev: true
 
   registry.npmjs.org/@tsconfig/node10/1.0.9:
@@ -1810,6 +1822,12 @@ packages:
     name: estraverse
     version: 5.3.0
     engines: {node: '>=4.0'}
+    dev: true
+
+  registry.npmjs.org/estree-walker/1.0.1:
+    resolution: {integrity: sha512-1fMXF3YP4pZZVozF8j/ZLfvnR8NSIljt56UhbZ5PeeDmmGHpgpdwQt7ITlGvYaQukCvuBRMLEiKiYC+oeIg4cg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/estree-walker/-/estree-walker-1.0.1.tgz}
+    name: estree-walker
+    version: 1.0.1
     dev: true
 
   registry.npmjs.org/estree-walker/2.0.2:

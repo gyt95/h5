@@ -1,9 +1,22 @@
+<script setup lang="ts">
+import { defineAsyncComponent } from 'vue'
+const RemoteButton = defineAsyncComponent(() => import('@webapp2/Button'))
+const RemoteFooter = defineAsyncComponent(() => import('@webapp2/Footer'))
+</script>
+
 <template>
-  <div>
-    <span>webapp1</span>
-  </div>
+  webapp1
+  <RemoteButton />
+  <RemoteFooter />
 </template>
 
-<script setup lang="ts"></script>
-
-<style scoped></style>
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>

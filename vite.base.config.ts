@@ -1,5 +1,4 @@
 import path from 'path'
-import vue from '@vitejs/plugin-vue'
 import { defineConfig } from 'vite'
 
 export const ViteBaseConfig = {
@@ -8,7 +7,7 @@ export const ViteBaseConfig = {
       '@': path.resolve(__dirname, 'src'),
     },
   },
-  plugins: [vue()],
+  // plugins: [vue()],
 }
 
 // https://vitejs.dev/config/

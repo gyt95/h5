@@ -1,11 +1,24 @@
 import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import federation from '@originjs/vite-plugin-federation'
 import { ViteBaseConfig } from '../../vite.base.config'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   ...ViteBaseConfig,
-  server: {
-    port: 8020,
-    host: '0.0.0.0',
+  plugins: [
+    vue(),
+    federation({
+      name: '@webapp2',
+      filename: 'bundle.js',
+      exposes: {
+        './Button': './src/components/Button.vue',
+        './Footer': './src/components/Footer.vue',
+      },
+      shared: ['vue'],
+    }),
+  ],
+  build: {
+    target: 'esnext',
   },
 })
