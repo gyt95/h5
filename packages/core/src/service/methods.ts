@@ -1,5 +1,5 @@
 import http from './axios'
-import { Request } from '@/types'
+import { Request } from '../types'
 // import Cookies from 'js-cookie';
 
 export const apiGet = (url: string, params?: any): Promise<Request> => {

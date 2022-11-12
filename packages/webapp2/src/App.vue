@@ -1,4 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { onMounted } from 'vue'
+import { userInfoUrl } from './api'
+
+onMounted(async () => {
+  await userInfoUrl()
+})
+</script>
 
 <template>webapp2</template>
 

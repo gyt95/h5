@@ -1,7 +1,12 @@
 <script setup lang="ts">
-import { defineAsyncComponent } from 'vue'
+import { defineAsyncComponent, onMounted } from 'vue'
+import { userInfoUrl } from './api'
 const RemoteButton = defineAsyncComponent(() => import('@webapp2/Button'))
 const RemoteFooter = defineAsyncComponent(() => import('@webapp2/Footer'))
+
+onMounted(async () => {
+  await userInfoUrl()
+})
 </script>
 
 <template>
