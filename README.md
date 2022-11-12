@@ -60,6 +60,9 @@ pnpm-dev
 ```
 // Install development dependencies in the root directory
 
-pnpm add xxx -wD
+> pnpm add xxx -wD
 
+// Add the core library core to package webapp1
+
+> pnpm i @h5/core -r --filter @h5/webapp1
 ```

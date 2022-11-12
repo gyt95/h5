@@ -62,6 +62,8 @@ pnpm dev
 
 ```
 // 在根目录安装开发依赖
-pnpm add xxx -wD
+> pnpm add xxx -wD
 
+// 在 package webapp1 中添加核心库 core
+> pnpm i @h5/core -r --filter @h5/webapp1
 ```
