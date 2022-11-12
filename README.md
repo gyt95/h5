@@ -32,6 +32,8 @@ lint-staged uses v13.x and requires Node.js version 14.13.1, 16.0.0 or above.
 
 Based on the above, it is recommended to install Node.js version 16+. The current long-term maintenance version is 16.18.0, and the latest early adopter version is 19.0.0.
 
+## Idea
+
 ## Usage
 
 Take windows as an example.
