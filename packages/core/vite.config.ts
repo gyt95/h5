@@ -1,17 +1,13 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 // import federation from '@originjs/vite-plugin-federation'
-// import { ViteBaseConfig } from '../../vite.base.config'
-import { resolve } from 'path'
+import { ViteBaseConfig } from '../../vite.base.config'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // ...ViteBaseConfig,
-  resolve: {
-    alias: {
-      '@': resolve(__dirname, 'src'),
-    },
-  },
+  ...ViteBaseConfig({
+    port: 6000,
+  }),
   plugins: [
     vue(),
     // federation({
@@ -23,7 +19,4 @@ export default defineConfig({
     //   shared: ['vue'],
     // })
   ],
-  build: {
-    target: 'esnext',
-  },
 })

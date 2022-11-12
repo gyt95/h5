@@ -5,7 +5,9 @@ import { ViteBaseConfig } from '../../vite.base.config'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  ...ViteBaseConfig,
+  ...ViteBaseConfig({
+    port: 6020,
+  }),
   plugins: [
     vue(),
     federation({
@@ -18,7 +20,4 @@ export default defineConfig({
       shared: ['vue'],
     }),
   ],
-  build: {
-    target: 'esnext',
-  },
 })
