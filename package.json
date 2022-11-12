@@ -1,7 +1,6 @@
 {
-  "name": "h5",
+  "private": true,
   "version": "1.0.0",
-  "description": "",
   "scripts": {
     "dev": "pnpm -r --parallel --filter=@h5/* run dev",
     "build": "pnpm -r --filter=@h5/* run build",
@@ -12,8 +11,6 @@
   "engines": {
     "node": ">=16.0.0"
   },
-  "keywords": [],
-  "author": "Kwan",
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",

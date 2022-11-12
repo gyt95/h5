@@ -1,8 +1,17 @@
 {
   "name": "@h5/core",
   "version": "1.0.0",
-  "description": "",
+  "description": "@h5/core",
   "main": "./src/index.ts",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gyt95/h5.git",
+    "directory": "packages/core"
+  },
+  "bugs": "https://github.com/gyt95/h5/issues",
+  "author": "gyt95",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
