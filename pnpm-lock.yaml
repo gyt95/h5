@@ -7,6 +7,7 @@ importers:
       '@commitlint/cli': ^17.1.2
       '@commitlint/config-conventional': ^17.1.0
       '@originjs/vite-plugin-federation': 1.1.7
+      '@types/node': ^18.11.9
       '@typescript-eslint/eslint-plugin': ^5.40.1
       '@typescript-eslint/parser': ^5.40.1
       '@vitejs/plugin-vue': ^3.1.2
@@ -29,6 +30,7 @@ importers:
       '@commitlint/cli': registry.npmjs.org/@commitlint/cli/17.1.2
       '@commitlint/config-conventional': registry.npmjs.org/@commitlint/config-conventional/17.1.0
       '@originjs/vite-plugin-federation': registry.npmjs.org/@originjs/vite-plugin-federation/1.1.7
+      '@types/node': registry.npmjs.org/@types/node/18.11.9
       '@typescript-eslint/eslint-plugin': registry.npmjs.org/@typescript-eslint/eslint-plugin/5.40.1_c4zyna56jjjrggqkyejnaxjxfu
       '@typescript-eslint/parser': registry.npmjs.org/@typescript-eslint/parser/5.40.1_wyqvi574yv7oiwfeinomdzmc3m
       '@vitejs/plugin-vue': registry.npmjs.org/@vitejs/plugin-vue/3.1.2_vite@3.1.8+vue@3.2.41
@@ -44,7 +46,16 @@ importers:
       vue-tsc: registry.npmjs.org/vue-tsc/1.0.8_typescript@4.8.4
 
   packages/webapp1:
-    specifiers: {}
+    specifiers:
+      '@h5/core': workspace:^1.0.0
+    dependencies:
+      '@h5/core': link:../core
+
+  packages/webapp2:
+    specifiers:
+      '@h5/core': workspace:^1.0.0
+    dependencies:
+      '@h5/core': link:../core
 
 packages:
 
@@ -470,6 +481,12 @@ packages:
     resolution: {integrity: sha512-Y6S38pFr04yb13qqHf8uk1nHE3lXgQ30WZbv1mLliV9pt0NjvqdWttLcrOYLnXbOafknVYRHZGoMSpR9UwfYow==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@types/node/-/node-14.18.32.tgz}
     name: '@types/node'
     version: 14.18.32
+    dev: true
+
+  registry.npmjs.org/@types/node/18.11.9:
+    resolution: {integrity: sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@types/node/-/node-18.11.9.tgz}
+    name: '@types/node'
+    version: 18.11.9
     dev: true
 
   registry.npmjs.org/@types/normalize-package-data/2.4.1:
