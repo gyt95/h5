@@ -5,25 +5,28 @@
 ## 动机
 
 不想再在每个项目都复制粘贴请求库文件。
+
 不想再在每个项目都安装一堆同名的依赖。
+
 不想再在每个项目里重复封装相同的组件。
 
 所以有了这个项目。
+
 这个项目就是为了把所有 H5 页面项目集合到一个项目而生的。
 
 ## 技术栈
 
-- 管理模式：monorepo
-- 包管理工具：pnpm
-- 构建工具：Vite3.x
-- 前端框架：Vue3.2+（由于 H5 端开发有 vant 这个强大的第三方组件库，所以果断统一使用 Vue）
-- 路由：Vue-router4
-- 状态管理：Pinia
-- 组件库：Vant3.x（4.x 目前还在 rc 版本，距离稳定还很远）
-- 类型检查：TypeScript4.x
-- 请求库：Axios
+- 管理模式：Monorepo
+- 包管理工具：[pnpm](https://github.com/pnpm/pnpm)
+- 构建工具：[Vite 3.x](https://github.com/vitejs/vite)
+- 前端框架：[Vue 3.2+](https://github.com/vuejs/core)
+- 路由：[Vue-router 4.x](https://github.com/vuejs/router)
+- 状态管理：[Pinia 2.x](https://github.com/vuejs/pinia)
+- 类型检查：[TypeScript 4.x](https://github.com/microsoft/TypeScript)
+- 组件库：[Vant 3.x](https://github.com/youzan/vant)（4.x 目前还在 rc 版本，距离稳定还很远）
+- 请求库：[Axios](https://github.com/axios/axios)
 
-- 其他技术：模块联邦
+- 其他技术：[模块联邦](https://webpack.docschina.org/concepts/module-federation/)
 
 ## 注意事项
 
@@ -37,7 +40,8 @@ lint-staged 采用 v13.x，需要 Node.js 版本 14.13.1，16.0.0 或以上。
 
 ## 构思
 
-1. 由于都是统一技术栈，所以以上提及的全部作为 root 依赖。打包时可考虑远程加载，减少项目打包体积；
+0. 因为 H5 端开发有强大的第三方组件库 Vant ，所以果断统一使用 Vue；
+1. 因为技术栈统一，所以以上提及的全部作为 root 依赖。打包时可考虑模块联邦，减少项目打包体积；
 2.
 
 ## 使用
