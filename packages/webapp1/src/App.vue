@@ -14,12 +14,12 @@ onMounted(async () => {
 </script>
 
 <template>
-  webapp1
+  <p class="title">webapp1</p>
   <RemoteButton />
   <RemoteFooter />
 </template>
 
-<style>
+<style lang="less" scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -27,5 +27,10 @@ onMounted(async () => {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
 }
 </style>
