@@ -69,6 +69,10 @@ pnpm-dev
 
 > pnpm add xxx -wD
 
+// Install development dependencies in the core library
+
+> >pnpm add xxx --filter @h5/core
+
 // Add the core library core to package webapp1
 
 > pnpm i @h5/core -r --filter @h5/webapp1

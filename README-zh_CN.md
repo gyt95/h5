@@ -65,8 +65,12 @@ pnpm dev
 ## 常用命令
 
 ```
-// 在根目录安装开发依赖
+// 在根目录安装开发依赖 xxx
 > pnpm add xxx -wD
+
+// 在 core 中单独安装 xxx
+
+> >pnpm add xxx --filter @h5/core
 
 // 在 package webapp1 中添加核心库 core
 > pnpm i @h5/core -r --filter @h5/webapp1
