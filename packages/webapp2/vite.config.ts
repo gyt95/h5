@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig, splitVendorChunkPlugin } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import federation from '@originjs/vite-plugin-federation'
 import { ViteBaseConfig } from '../../vite.base.config'
@@ -10,6 +10,7 @@ export default defineConfig({
   }),
   plugins: [
     vue(),
+    splitVendorChunkPlugin(),
     federation({
       name: '@webapp2',
       filename: 'bundle.js',
