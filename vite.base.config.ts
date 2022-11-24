@@ -23,16 +23,12 @@ export const ViteBaseConfig = ({ port }: ViteBaseConfig) => ({
       },
     },
   },
+  esbuild: {
+    pure: ['console.log'],
+  },
   build: {
     target: 'esnext',
     sourcemap: true,
-    terserOptions: {
-      compress: {
-        keep_infinity: true, // 防止 Infinity 被压缩成 1/0，可能会导致 Chrome 上的性能问题
-        drop_console: true, // 去除 console
-        drop_debugger: true, // 去除 debugger
-      },
-    },
     // chunkSizeWarningLimit: 1500,
   },
   // plugins: [vue()],
