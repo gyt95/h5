@@ -41,38 +41,30 @@ Based on the above, it is recommended to install Node.js version 16+. The curren
 
 Take windows as an example.
 
-```
-
-// 1. Enter the directory and execute the installation
-
+```bash
+# Enter the directory and execute the installation
 pnpm i
 
-// Since webapp2 provides remote modules for other places to call, you need to execute the build command first. And you need to open a static server locally, so use the preview command.
-
+# Since webapp2 provides remote modules for other places to call, you need to execute the build command first. And you need to open a static server locally, so use the preview command
 cd packages\webapp2
 pnpm build
 pnpm preview
 
-// Enter webapp1 and start the application
-
+# Enter webapp1 and start the application
 cd ..\webapp1
-pnpm-dev
-
+pnpm dev
 ```
 
-## Common Commands
+## Common commands
 
-```
-// Install development dependencies in the root directory
-
+```bash
+# Install development dependencies in the root directory
 > pnpm add xxx -wD
 
-// Install development dependencies in the core library
+# Install development dependencies in the core library
+> pnpm add xxx --filter @h5/core
 
-> >pnpm add xxx --filter @h5/core
-
-// Add the core library core to package webapp1
-
+# Add the core library core to package webapp1
 > pnpm i @h5/core -r --filter @h5/webapp1
 ```
 

@@ -48,31 +48,31 @@ lint-staged 采用 v13.x，需要 Node.js 版本 14.13.1，16.0.0 或以上。
 
 以 windows 为例
 
-```
-// 1.进入目录，执行安装
+```bash
+# 进入目录，执行安装
 pnpm i
 
-// 由于webapp2提供远程模块供其他地方调用，所以需要先执行build命令。并且需要本地开启静态服务器所以用preview命令。
+# 由于webapp2提供远程模块供其他地方调用，所以需要先执行build命令。并且需要本地开启静态服务器所以用preview命令
 cd packages\webapp2
 pnpm build
 pnpm preview
 
-// 进入webapp1，启动应用
+# 进入webapp1，启动应用
 cd ..\webapp1
 pnpm dev
 ```
 
 ## 常用命令
 
-```
-// 在根目录安装开发依赖 xxx
+```bash
+# 在根目录安装开发依赖 xxx
 > pnpm add xxx -wD
 
-// 在 core 中单独安装 xxx
+# 在 core 中单独安装 xxx
 
-> >pnpm add xxx --filter @h5/core
+> pnpm add xxx --filter @h5/core
 
-// 在 package webapp1 中添加核心库 core
+# 在 package webapp1 中添加核心库 core
 > pnpm i @h5/core -r --filter @h5/webapp1
 ```
 
