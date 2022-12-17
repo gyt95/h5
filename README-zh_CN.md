@@ -23,7 +23,7 @@
 - 路由：[Vue-router 4.x](https://github.com/vuejs/router)
 - 状态管理：[Pinia 2.x](https://github.com/vuejs/pinia)
 - 类型检查：[TypeScript 4.x](https://github.com/microsoft/TypeScript)
-- 组件库：[Vant 3.x](https://github.com/youzan/vant)（4.x 目前还在 rc 版本，距离稳定还很远）
+- 组件库：[Vant 4.x](https://github.com/youzan/vant)
 - 请求库：[Axios](https://github.com/axios/axios)
 
 - 其他技术：[模块联邦](https://webpack.docschina.org/concepts/module-federation/)

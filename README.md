@@ -23,7 +23,7 @@ This project was born to combine all H5 page projects into one project.
 - Routing: [Vue-router 4.x](https://github.com/vuejs/router)
 - State management: [Pinia 2.x](https://github.com/vuejs/pinia)
 - Type checking: [TypeScript 4.x](https://github.com/microsoft/TypeScript)
-- Component library: [Vant 3.x](https://github.com/youzan/vant) (4.x is still in rc version, it is still far from stable)
+- Component library: [Vant 4.x](https://github.com/youzan/vant)
 - Request library: [Axios](https://github.com/axios/axios)
 - Other Technologies: [Module Federation](https://webpack.js.org/concepts/module-federation/)
 
