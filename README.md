@@ -75,3 +75,7 @@ pnpm-dev
 
 > pnpm i @h5/core -r --filter @h5/webapp1
 ```
+
+## LICENSE
+
+[MIT](https://en.wikipedia.org/wiki/MIT_License)
