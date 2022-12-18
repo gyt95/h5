@@ -68,6 +68,10 @@ pnpm dev
 > pnpm i @h5/core -r --filter @h5/webapp1
 ```
 
+## Contribution Guide
+
+If you find any problems during use, you can submit [Issue](https://github.com/gyt95/h5/issues) to us. Of course, we also welcome you to send us [PR](https://github.com/gyt95/h5/pulls).
+
 ## LICENSE
 
 [MIT](https://en.wikipedia.org/wiki/MIT_License)
