@@ -68,7 +68,6 @@ pnpm dev
 pnpm add xxx -wD
 
 # 在 core 中单独安装 xxx
-
 pnpm add xxx --filter @h5/core
 
 # 在 package webapp1 中添加核心库 core
