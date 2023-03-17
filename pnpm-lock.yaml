@@ -56,17 +56,17 @@ importers:
   packages/core:
     specifiers: {}
 
-  packages/webapp1:
+  webapp/webapp1:
     specifiers:
       '@h5/core': workspace:^1.0.0
     dependencies:
-      '@h5/core': link:../core
+      '@h5/core': link:../../packages/core
 
-  packages/webapp2:
+  webapp/webapp2:
     specifiers:
       '@h5/core': workspace:^1.0.0
     dependencies:
-      '@h5/core': link:../core
+      '@h5/core': link:../../packages/core
 
 packages:
 
