@@ -42,7 +42,7 @@ lint-staged 采用 v13.x，需要 Node.js 版本 14.13.1，16.0.0 或以上。
 
 0. 因为 H5 端开发有强大的第三方组件库 Vant ，所以果断统一使用 Vue；
 1. 因为技术栈统一，所以以上提及的全部作为 root 依赖。打包时可考虑模块联邦，减少项目打包体积；
-2.
+2. 需要有脚手架快速创建模版
 
 ## 使用
 
@@ -69,7 +69,6 @@ pnpm dev
 pnpm add xxx -wD
 
 # 在 core 中单独安装 xxx
-
 pnpm add xxx --filter @h5/core
 
 # 在 package webapp1 中添加核心库 core
