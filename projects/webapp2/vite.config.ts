@@ -1,5 +1,4 @@
-import { defineConfig, splitVendorChunkPlugin } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import { defineConfig } from 'vite'
 import federation from '@originjs/vite-plugin-federation'
 import { ViteBaseConfig } from '../../vite.base.config'
 
@@ -8,18 +7,16 @@ export default defineConfig({
   ...ViteBaseConfig({
     port: 6020,
     proxy_url: 'https://webapp2.com',
+    plugins: [
+      federation({
+        name: '@webapp2',
+        filename: 'bundle.js',
+        exposes: {
+          './Button': './src/components/Button.vue',
+          './Footer': './src/components/Footer.vue',
+        },
+        shared: ['vue'],
+      }),
+    ],
   }),
-  plugins: [
-    vue(),
-    splitVendorChunkPlugin(),
-    federation({
-      name: '@webapp2',
-      filename: 'bundle.js',
-      exposes: {
-        './Button': './src/components/Button.vue',
-        './Footer': './src/components/Footer.vue',
-      },
-      shared: ['vue'],
-    }),
-  ],
 })

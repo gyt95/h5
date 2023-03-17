@@ -1,12 +1,18 @@
 import path from 'path'
-import { defineConfig } from 'vite'
+import { defineConfig, splitVendorChunkPlugin } from 'vite'
+import vue from '@vitejs/plugin-vue'
 
 type ViteBaseConfig = {
   port: number
   proxy_url?: string
+  plugins?: any
 }
 
-export const ViteBaseConfig = ({ port, proxy_url }: ViteBaseConfig) => ({
+export const ViteBaseConfig = ({
+  port,
+  proxy_url,
+  plugins = [],
+}: ViteBaseConfig) => ({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
@@ -32,7 +38,7 @@ export const ViteBaseConfig = ({ port, proxy_url }: ViteBaseConfig) => ({
     sourcemap: true,
     // chunkSizeWarningLimit: 1500,
   },
-  // plugins: [vue()],
+  plugins: [vue(), splitVendorChunkPlugin(), ...plugins],
 })
 
 // https://vitejs.dev/config/
