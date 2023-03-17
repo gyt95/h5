@@ -6,6 +6,7 @@ export default {
 
 <template>
   <div class="footer">
+    <p>Footer from webapp2</p>
     <div class="left">Copyright © 2022 All rights reserved.</div>
   </div>
 </template>

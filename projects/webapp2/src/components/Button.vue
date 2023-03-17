@@ -3,5 +3,5 @@ const onClick = () => console.log('button click')
 </script>
 
 <template>
-  <button @click="onClick">Button</button>
+  <button @click="onClick">Button from webapp2</button>
 </template>
