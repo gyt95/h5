@@ -7,7 +7,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/gyt95/h5.git",
-    "directory": "packages/webapp1"
+    "directory": "projects/webapp1"
   },
   "bugs": "https://github.com/gyt95/h5/issues",
   "author": "gyt95",
