@@ -19,7 +19,7 @@ export const ViteBaseConfig = ({ port }: ViteBaseConfig) => ({
         target: 'https://xxx.com',
         // target: 'http://192.168.2.17:9756',
         changeOrigin: true,
-        rewrite: path => path.replace(/^\/api/, ''),
+        rewrite: (path: string) => path.replace(/^\/api/, ''),
       },
     },
   },
