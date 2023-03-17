@@ -3,9 +3,10 @@ import { defineConfig } from 'vite'
 
 type ViteBaseConfig = {
   port: number
+  proxy_url?: string
 }
 
-export const ViteBaseConfig = ({ port }: ViteBaseConfig) => ({
+export const ViteBaseConfig = ({ port, proxy_url }: ViteBaseConfig) => ({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
@@ -16,7 +17,7 @@ export const ViteBaseConfig = ({ port }: ViteBaseConfig) => ({
     host: '0.0.0.0',
     proxy: {
       '/api': {
-        target: 'https://xxx.com',
+        target: proxy_url,
         // target: 'http://192.168.2.17:9756',
         changeOrigin: true,
         rewrite: (path: string) => path.replace(/^\/api/, ''),

@@ -7,6 +7,7 @@ import { ViteBaseConfig } from '../../vite.base.config'
 export default defineConfig({
   ...ViteBaseConfig({
     port: 6010,
+    proxy_url: 'https://webapp1.com',
   }),
   plugins: [
     vue(),
