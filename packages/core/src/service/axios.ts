@@ -1,5 +1,9 @@
 import env from './env'
-import axios, { AxiosRequestConfig, AxiosResponse, AxiosError } from 'axios'
+import axios, {
+  InternalAxiosRequestConfig,
+  AxiosResponse,
+  AxiosError,
+} from 'axios'
 
 const http = axios.create({
   //timeout: 8000, /*设置请求超时时间*/
@@ -11,7 +15,7 @@ const http = axios.create({
 
 // 添加响应拦截器
 http.interceptors.request.use(
-  (config: AxiosRequestConfig) => {
+  (config: InternalAxiosRequestConfig) => {
     return config
   },
   (error: AxiosError) => {
