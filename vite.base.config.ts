@@ -3,19 +3,21 @@ import { defineConfig, splitVendorChunkPlugin } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 type ViteBaseConfig = {
+  dirname: string
   port: number
   proxy_url?: string
   plugins?: any
 }
 
 export const ViteBaseConfig = ({
+  dirname,
   port,
   proxy_url,
   plugins = [],
 }: ViteBaseConfig) => ({
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'),
+      '@': path.resolve(dirname, 'src'), // use dirname instead of __dirname
     },
   },
   server: {

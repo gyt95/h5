@@ -6,7 +6,7 @@ importers:
     specifiers:
       '@commitlint/cli': ^17.4.4
       '@commitlint/config-conventional': ^17.4.4
-      '@originjs/vite-plugin-federation': 1.2.1
+      '@originjs/vite-plugin-federation': ^1.2.1
       '@types/node': ^18.15.3
       '@typescript-eslint/eslint-plugin': ^5.55.0
       '@typescript-eslint/parser': ^5.55.0

@@ -5,6 +5,7 @@ import { ViteBaseConfig } from '../../vite.base.config'
 // https://vitejs.dev/config/
 export default defineConfig({
   ...ViteBaseConfig({
+    dirname: __dirname,
     port: 6010,
     proxy_url: 'https://webapp1.com',
     plugins: [

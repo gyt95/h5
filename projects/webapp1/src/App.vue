@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { AButton } from '@h5/core'
+import WebAppButton from '@/components/button.vue'
 import { defineAsyncComponent, onMounted } from 'vue'
 import { userInfoUrl } from './api'
 const RemoteButton = defineAsyncComponent(() => import('@webapp2/Button'))
@@ -12,7 +13,8 @@ onMounted(async () => {
 
 <template>
   <p class="title">webapp1</p>
-  <AButton type="primary">button</AButton>
+  <a-button type="primary" disabled>button</a-button>
+  <WebAppButton></WebAppButton>
   <RemoteButton />
   <RemoteFooter />
 </template>

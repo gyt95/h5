@@ -1,13 +1,17 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 import { userInfoUrl } from './api'
+import WebAppButton from '@/components/Button.vue'
 
 onMounted(async () => {
   await userInfoUrl()
 })
 </script>
 
-<template>webapp2</template>
+<template>
+  <span>webapp2</span>
+  <WebAppButton></WebAppButton>
+</template>
 
 <style>
 #app {
