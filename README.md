@@ -2,6 +2,8 @@
 
 > Pick a very concise name and write a meaningful project.
 
+English | [简体中文](./README-zh_CN.md)
+
 ## Motivation
 
 Don't want to copy-paste request library files in every project anymore.
