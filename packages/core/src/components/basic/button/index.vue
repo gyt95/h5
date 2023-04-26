@@ -4,7 +4,7 @@
   </Button>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import { Button } from 'vant'
 </script>
 

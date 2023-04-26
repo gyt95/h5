@@ -1,6 +1,7 @@
 import path from 'path'
 import { defineConfig, splitVendorChunkPlugin } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 
 type ViteBaseConfig = {
   dirname: string
@@ -40,7 +41,7 @@ export const ViteBaseConfig = ({
     sourcemap: true,
     // chunkSizeWarningLimit: 1500,
   },
-  plugins: [vue(), splitVendorChunkPlugin(), ...plugins],
+  plugins: [vue(), vueJsx(), splitVendorChunkPlugin(), ...plugins],
 })
 
 // https://vitejs.dev/config/
