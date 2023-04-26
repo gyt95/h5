@@ -7,6 +7,7 @@ import { ViteBaseConfig } from '../../vite.base.config'
 export default defineConfig({
   ...ViteBaseConfig({
     port: 6000,
+    dirname: __dirname,
   }),
   plugins: [
     vue(),
